@@ -1,0 +1,44 @@
+body {
+    background-color: #25231d85;
+}
+h1 {
+    color: rgb(15, 13, 13);
+    background-color: rgb(255, 0, 183);
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+  
+  body {
+    background-image: url("paper.gif");
+  }
+  <html>
+<head>
+<style>
+div {
+  border: 1px solid gray;
+  padding: 8px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #191b19;
+}
+
+p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: #008CBA;
+}
+</style>
+</head>
+<body>
