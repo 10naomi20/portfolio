@@ -1,44 +1,160 @@
 body {
-    background-color: #25231d85;
-}
+    background-color: #d8d8d6c4;
+}/*Sets the background color of the entire body to a light grayish color.*/
 h1 {
-    color: rgb(15, 13, 13);
-    background-color: rgb(255, 0, 183);
+    color: rgb(140, 123, 123);
     text-align: center;
-  }
-  
+  }/* Styles level 1 headings (<h1>) with a specific color and centers the text.*/
+h2{
+  color: #554830;
+  text-align: center;
+}/*Styles level 2 and level 3 headings (<h2> and <h3>) with a different color and centers the text.*/
+
+h3{
+  color: #554830;
+  text-align: center;
+}
   p {
     font-family: verdana;
     font-size: 20px;
-  }
+  }/*Styles paragraphs (<p>) to use the Verdana font family and set the font size to 20 pixels.*/
+
+ 
+
+.showcase{
+  width: 100%;
+  height: 100vh;
   
-  body {
-    background-image: url("paper.gif");
-  }
-  <html>
-<head>
-<style>
-div {
-  border: 1px solid gray;
-  padding: 8px;
-}
+  color:#111;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}  
+/*Styles a section with the class .showcase. It makes it full-width, 
+100 viewport heights in height, sets the text color, adds padding, and arranges its contents in a flex container with space between items.*/
 
-h1 {
+.showcase header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+}/*Styles the header within the .showcase. It positions it at the top left corner, 
+makes it a flex container, adds space between items, sets width, padding, and a z-index.*/
+
+.showcase video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity:0.8;
+}
+/*Styles a video within the .showcase. It positions it absolutely, 
+covers the entire container, maintains the aspect ratio, and sets opacity.*/
+
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #8cb2b9;
+  padding: 10px;
+}
+/*Styles an element with the class .center.
+ It centers it, sets a width, adds a border, and padding.*/
+ 
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 80px;
+}/*Styles div elements with the class .gallery. It sets margin, border, float, and width.*/
+
+div.gallery:hover {
+  border: 1px solid #777;
+}/*Styles div elements with the class .gallery when hovered. It changes the border color.
+*/
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}/*Styles images inside div elements with the class .gallery. 
+It makes them 100% width while maintaining the aspect ratio.*/
+
+div.desc {
+  padding: 15px;
   text-align: center;
-  text-transform: uppercase;
-  color: #191b19;
 }
 
-p {
-  text-indent: 50px;
-  text-align: justify;
-  letter-spacing: 3px;
+.even {
+
+  background-color: #bbbbbb;
+  
+  } /* Styles elements with the class .even. 
+  It sets the background color to a light gray. */
+
+  #intro {
+
+    border: 3px dotted rgb(155, 203, 220);
+    
+    }
+
+    .container {
+      width: 80%; /* Specify container width（adjust accordin)*/
+      margin: 0 auto; /* center position */
+      padding: 20px; /* space */
+      background-color: #d6cbcb; /* container colour */
+    }
+    #biography {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px; /* Add appropriate margins (adjust as needed) */
+    }
+    
+    .container {
+      max-width: 600px; /* Specify maximum width of container (adjust as needed) */
+    }
+    
+    .container img {
+      max-width: 100%; /* Fitting Images into Containers */
+      height: auto; /* Maintain aspect ratio*/
+      margin-bottom: 20px; /* Add margin between image and text */
+    }
+
+
+
+
+    /* Apply Flexbox to the container */
+.gallery-container {
+  display: flex;
+  justify-content: space-between;
 }
 
-a {
-  text-decoration: none;
-  color: #008CBA;
+/* Style each gallery item */
+.gallery {
+  flex: 1; /* Distribute available space equally among items */
+  margin: 5px;
+  border: 1px solid #ccc;
 }
-</style>
-</head>
-<body>
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery .desc {
+  padding: 15px;
+  text-align: center;
+}
