@@ -1,41 +1,39 @@
+/* Body Styles */
 body {
-    background-color: #d8d8d6c4;
-}/*Sets the background color of the entire body to a light grayish color.*/
-h1 {
-    color: rgb(140, 123, 123);
-    text-align: center;
-  }/* Styles level 1 headings (<h1>) with a specific color and centers the text.*/
-h2{
-  color: #554830;
-  text-align: center;
-}/*Styles level 2 and level 3 headings (<h2> and <h3>) with a different color and centers the text.*/
-
-h3{
-  color: #554830;
-  text-align: center;
+  background-color: #d8d8d6c4; /* Sets the background color of the entire body to a light grayish color. */
 }
-  p {
-    font-family: verdana;
-    font-size: 20px;
-  }/*Styles paragraphs (<p>) to use the Verdana font family and set the font size to 20 pixels.*/
 
- 
+/* Heading Styles */
+h1 {
+  color: rgb(140, 123, 123);
+  text-align: center; /* Styles level 1 headings (<h1>) with a specific color and centers the text. */
+  font-family: 'Hedvig Letters Serif', serif;
 
-.showcase{
+}
+
+h2, h3 {
+  color: #554830;
+  text-align: center; /* Styles level 2 and level 3 headings (<h2> and <h3>) with a different color and centers the text. */
+}
+
+/* Paragraph Styles */
+p {
+  font-family: verdana;
+  font-size: 20px; /* Styles paragraphs (<p>) to use the Verdana font family and set the font size to 20 pixels. */
+}
+
+/* Showcase Styles */
+.showcase {
   width: 100%;
   height: 100vh;
-  
-  color:#111;
+  color: #111;
   padding: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  
-}  
-/*Styles a section with the class .showcase. It makes it full-width, 
-100 viewport heights in height, sets the text color, adds padding, and arranges its contents in a flex container with space between items.*/
+  justify-content: space-between; /* Styles a section with the class .showcase. It makes it full-width, 100 viewport heights in height, sets the text color, adds padding, and arranges its contents in a flex container with space between items. */
+}
 
-.showcase header{
+.showcase header {
   position: absolute;
   top: 0;
   left: 0;
@@ -44,117 +42,152 @@ h3{
   justify-content: space-between;
   width: 100%;
   padding: 40px 100px;
-  z-index: 1000;
-}/*Styles the header within the .showcase. It positions it at the top left corner, 
-makes it a flex container, adds space between items, sets width, padding, and a z-index.*/
+  z-index: 1000; /* Styles the header within the .showcase. It positions it at the top left corner, makes it a flex container, adds space between items, sets width, padding, and a z-index. */
+}
 
-.showcase video{
+.showcase video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity:0.8;
+  opacity: 0.8; /* Styles a video within the .showcase. It positions it absolutely, covers the entire container, maintains the aspect ratio, and sets opacity. */
 }
-/*Styles a video within the .showcase. It positions it absolutely, 
-covers the entire container, maintains the aspect ratio, and sets opacity.*/
 
+/* Center Styles */
 .center {
   margin: auto;
   width: 60%;
   border: 3px solid #8cb2b9;
-  padding: 10px;
+  padding: 10px; /* Styles an element with the class .center. It centers it, sets a width, adds a border, and padding. */
 }
-/*Styles an element with the class .center.
- It centers it, sets a width, adds a border, and padding.*/
- 
+
+/* Gallery Styles */
 div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
   width: 80px;
-}/*Styles div elements with the class .gallery. It sets margin, border, float, and width.*/
+}
 
 div.gallery:hover {
-  border: 1px solid #777;
-}/*Styles div elements with the class .gallery when hovered. It changes the border color.
-*/
+  border: 1px solid #777; /* Styles div elements with the class .gallery when hovered. It changes the border color. */
+}
 
 div.gallery img {
   width: 100%;
-  height: auto;
-}/*Styles images inside div elements with the class .gallery. 
-It makes them 100% width while maintaining the aspect ratio.*/
+  height: auto; /* Styles images inside div elements with the class .gallery. It makes them 100% width while maintaining the aspect ratio. */
+}
 
 div.desc {
   padding: 15px;
   text-align: center;
 }
 
+/* Even Styles */
 .even {
+  background-color: #bbbbbb; /* Styles elements with the class .even. It sets the background color to a light gray. */
+}
 
-  background-color: #bbbbbb;
-  
-  } /* Styles elements with the class .even. 
-  It sets the background color to a light gray. */
+/* Intro Styles */
+#intro {
+  border: 3px dotted rgb(155, 203, 220);
+}
 
-  #intro {
+/* Container Styles */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #d6cbcb; /* Specify container width, center position, space, and container color. */
+  max-width: 600px; /* Specify maximum width of container (adjust as needed). */
+}
 
-    border: 3px dotted rgb(155, 203, 220);
-    
-    }
+/* Biography Styles */
+#biography {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px; /* Add appropriate margins (adjust as needed). */
+}
 
-    .container {
-      width: 80%; /* Specify container width（adjust accordin)*/
-      margin: 0 auto; /* center position */
-      padding: 20px; /* space */
-      background-color: #d6cbcb; /* container colour */
-    }
-    #biography {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px; /* Add appropriate margins (adjust as needed) */
-    }
-    
-    .container {
-      max-width: 600px; /* Specify maximum width of container (adjust as needed) */
-    }
-    
-    .container img {
-      max-width: 100%; /* Fitting Images into Containers */
-      height: auto; /* Maintain aspect ratio*/
-      margin-bottom: 20px; /* Add margin between image and text */
-    }
+.container img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px; /* Fitting Images into Containers, Maintain aspect ratio, Add margin between image and text. */
+}
 
-
-
-
-    /* Apply Flexbox to the container */
+/* Gallery Container Styles */
 .gallery-container {
   display: flex;
   justify-content: space-between;
 }
 
-/* Style each gallery item */
+/* Gallery Item Styles */
 .gallery {
-  flex: 1; /* Distribute available space equally among items */
+  flex: 1;
   margin: 5px;
   border: 1px solid #ccc;
 }
 
 .gallery:hover {
-  border: 1px solid #777;
+  border: 1px solid #777; /* Styles gallery item when hovered. */
 }
 
 .gallery img {
   width: 100%;
-  height: auto;
+  height: auto; /* Styles images inside gallery items. */
 }
 
 .gallery .desc {
   padding: 15px;
   text-align: center;
 }
+
+
+
+
+
+.even-row {
+  background-color: #f0f0f0; /* even back ground colour */
+}
+
+.odd-row {
+  background-color: #ffffff; /* odd back ground colour */
+}
+
+/* small divice（smartphone） */
+@media only screen and (max-width: 600px) {
+ 
+}
+
+/* midium divice（tablet） */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  
+}
+
+/* large divice（desktop） */
+@media only screen and (min-width: 1025px) {
+  
+}
+
+
+/* Button style */
+#myButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #db349b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover */
+#myButton:hover {
+  background-color: #b96f29;
+}
+

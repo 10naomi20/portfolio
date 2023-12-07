@@ -2,10 +2,16 @@
 <html>
 
 <head>
+    <script defer src=“directory/file.js”></script>
+    
     <meta charset="UTF-8">
     <meta name="description" content="My Personal Website">
     <link href="base.css" rel="stylesheet" media="screen">
     <title></title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
  </head>
 
 <body>
@@ -56,7 +62,7 @@
         </ul></p>
         </div>
         
-        <h2>Reccomend itmes for the Spring / Summer season</h2>
+        <h2>Recomend itmes for the Spring / Summer season</h2>
         
         <section id="intro">
 
@@ -67,10 +73,54 @@
         <p>The next season's trend is for materials with a glossy or textured look. 
             Also, short length skirts continue to attract attention.
             By bringing in patterns, even shorter length skirts can be worn without hesitation.</p>
-        <h2>ITEMS </h2>
+        
+            <style>
+                /* botton */
+                #hoverBtn {
+                    padding: 10px;
+                    background-color: #ad5078;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                }
+        
+                /* change colour */
+                #hoverBtn:hover {
+                    background-color: #db7210;
+                }
+            </style>
+            
+            <button id="hoverBtn">click here if you like it</button>
+
+            
+
+
+
+<style>
+    /* 偶数と奇数のスタイルを定義 */
+    .even {
+        color: rgb(195, 54, 151);
+    }
+
+    .odd {
+        color: rgb(85, 50, 50);
+    }
+</style>
+
+<button id="btn-counter">Increment</button>
+<p id="txt-counter" class="even">Number: 1</p>
+
+
+
+            <h2>ITEMS </h2>
     </section>
-
-
+<select id="mySelect" onchange="myFunction()">
+<option value="shirts">shirts</option>
+<option value="skirt">skirt</option>
+<option value="hand knit">hand knit</option>
+<option value="pants">pants</option>
+</select>
+<p id="demo"></p>
     
     <ul>
 
@@ -130,15 +180,29 @@
       <h2>Contact Me</h2>
       <p>If you'd like to get in touch, please fill out the contact form below:</p>
       <!-- Contact form code goes here -->
+
+      <button id="btn-alert">Click me for alert</button>
+
   </section>
 
-  <!-- Footer -->
-  <footer>
-      <p>&copy; 2023 My Personal Website. All rights reserved Naomi.</p>
-  </footer>
+<!-- IDが"numbers"の順序付きリストを作成 -->
+<ol id="numbers"></ol>
 
-  <!-- Copyright Naomi -->
-  <!-- Copyright &copy; 2023 by Naomi -->
+ <!-- ボタン要素 -->
+ <button id="myButton">Click me </button>
+
+
+  <!-- Footer -->
+<footer>
+    <p class="copyright">
+        &copy; <span id="curYr"></span> Naomi. All rights reserved. My Personal Website.
+    </p>
+</footer>
+
+  
+
+  
+  <script src="file.js"></script>
 </body>
 </html>
 
